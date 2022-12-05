@@ -1,6 +1,6 @@
 import Headernav from "./componentes/Headernav";
 import Footer from "./Footer";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function GitHub() {

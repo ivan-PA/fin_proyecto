@@ -1,5 +1,5 @@
 import Headernav from "../componentes/Headernav";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Footer from "../Footer";
 
 export default function arquitecto() {
