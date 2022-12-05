@@ -18,26 +18,29 @@ export default function ConfigBotonesMenu() {
         </li>
 
         <li>
-          <Link href="/Sobremi">
-            <div className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1">
-              Sobre mi
-            </div>
+          <Link
+            href="/Sobremi"
+            className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1"
+          >
+            Sobre mi
           </Link>
         </li>
 
         <li>
-          <Link href="/Estudios">
-            <div className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1">
-              Estudios
-            </div>
+          <Link
+            href="/Estudios"
+            className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1"
+          >
+            Estudios
           </Link>
         </li>
 
         <li>
-          <Link href="/GitHub">
-            <div className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1">
-              GitHub
-            </div>
+          <Link
+            href="/GitHub"
+            className="block py-2 pr-4 pl-3 mt-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1"
+          >
+            GitHub
           </Link>
         </li>
 

@@ -4,29 +4,29 @@ import Link from "next/link";
 import ConfigBotonesMenu from "./ConfigBotonesMenu";
 
 export default function Headernav() {
-  const [mostrar, setMostrar] = useState(false);
-  const [user, setUser] = useState(true);
+  const [navButton, setNavButton] = useState(false);
+  const [nav, setNav] = useState(true);
   const id = useId();
 
   useEffect(() => {
     let pantalla = window.matchMedia("(min-width:1280px)");
-    setUser(pantalla.matches);
+    setNav(pantalla.matches);
   }, []);
 
   //Función para ocultar menú o abrir en formato ordenador
   function WindowReSize() {
     let pantalla = window.matchMedia("(min-width:1280px)");
-    setUser(pantalla.matches);
-    user ? setMostrar(false) : "";
+    setNav(pantalla.matches);
+    nav ? setNavButton(false) : "";
   }
 
-  //Al no estar definido en el cliente window hay que asociarlo a indefinido
+  // Al no estar definido en el cliente window hay que asociarlo a indefinido
   if (typeof window !== "undefined") {
     window.onresize = WindowReSize;
   }
 
   function abrirMenu() {
-    setMostrar(!mostrar);
+    setNavButton(!navButton);
   }
 
   return (
@@ -34,28 +34,30 @@ export default function Headernav() {
       <nav className="bg-white border-gray-200 h-28 px-2 sm:px-4 py-2.5">
         <div className=" container flex flex-wrap justify-between mx-auto">
           {/*Mostramos la imagen de la empresa */}
-          <Link href="/">
-            <div className="animate-entry block relative top-6 left-8 w-52 h-10 2xl:w-96 2xl:h-20">
-              <Image
-                className="w-auto h-auto"
-                src={"/images/Jepa.jpg"}
-                width={200}
-                height={40}
-                alt="logo JP"
-                href="/"
-              />
-            </div>
+          <Link
+            href="/"
+            className="animate-entry block relative top-6 left-8 w-52 h-10 2xl:w-96 2xl:h-20"
+          >
+            {/* <div className="animate-entry block relative top-6 left-8 w-52 h-10 2xl:w-96 2xl:h-20"> */}
+            <Image
+              className="w-auto h-auto"
+              src={"/images/Jepa.jpg"}
+              width={200}
+              height={40}
+              alt="logo JP"
+              href="/"
+            />
+            {/* </div> */}
           </Link>
 
-          {user && <ConfigBotonesMenu className="hidden z-30" key={id} />}
+          {nav && <ConfigBotonesMenu className="hidden z-30" key={id} />}
 
           {/*Botón para pantallas pequeñas */}
           <div className="flex flex-col">
-            <button
+            <div
               onClick={() => abrirMenu()}
               id="botonNav"
               data-collapse-toggle="navbar-default"
-              type="button"
               className="fixed top-8 right-8 ml-3 flex-row xl:flex-col items-center p-2  text-lg text-gray-500 rounded-lg xl:hidden  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 z-20"
               aria-controls="navbar-default"
               aria-expanded="false"
@@ -75,9 +77,9 @@ export default function Headernav() {
                 ></path>
               </svg>
 
-              {/*Menú que se muestra sólo si la variable mostrar está en true*/}
-              {mostrar && <ConfigBotonesMenu className="z-30" key={id} />}
-            </button>
+              {/*Menú que se muestra sólo si la variable navButton está en true*/}
+              {navButton && <ConfigBotonesMenu className="z-30" key={id} />}
+            </div>
           </div>
         </div>
       </nav>

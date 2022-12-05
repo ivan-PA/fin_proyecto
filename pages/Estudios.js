@@ -17,7 +17,7 @@ export default function Estudios() {
           <div className=" grid grid-row-2 lg:grid-cols-2 items-center max-h-min min-h-screen">
             <div className="pl-10 pb-10">
               <br />
-              <p className="text-lg text-black py-10">
+              <div className="text-lg text-black py-10">
                 He tenido trabajos en varios sectores, gracias a mi capacidad de
                 adaptación puedo decir que domino un poco de todo, puede
                 resultar interesante a la hora de poner una idea en
@@ -249,7 +249,7 @@ export default function Estudios() {
                     </div>
                   </li>
                 </ul>
-              </p>
+              </div>
 
               <Link
                 href="/Contacto"
