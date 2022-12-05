@@ -38,19 +38,19 @@ export default function Headernav() {
             href="/"
             className="animate-entry block relative top-6 left-8 w-52 h-10 2xl:w-96 2xl:h-20"
           >
-            {/* <div className="animate-entry block relative top-6 left-8 w-52 h-10 2xl:w-96 2xl:h-20"> */}
             <Image
               className="w-auto h-auto"
               src={"/images/Jepa.jpg"}
               width={200}
               height={40}
+              priority={true}
               alt="logo JP"
               href="/"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
-            {/* </div> */}
+                height: "auto",
+              }}
+            />
           </Link>
 
           {nav && <ConfigBotonesMenu className="hidden z-30" key={id} />}

@@ -15,15 +15,15 @@ export default function CardOpiniones(props) {
             width: "100%",
             height: "auto",
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </div>
 
       <div className=" block relative top-0 -right-7 w-8 h-8 rounded-full z-10 m-auto">
         <Image
           className="object-contain"
           src={props.rutaLogo}
-          priority
           width={32}
           height={32}
           alt="Imagen de Logo"
@@ -32,8 +32,9 @@ export default function CardOpiniones(props) {
             width: "100%",
             height: "auto",
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </div>
       <div className="bg-gray-400 flex flex-col relative bottom-8 right-4 w-96 h-64 overflow-y-auto rounded-lg shadow-lg shadow-black">
         <p className="p-1 mt-8 mx-4  w-70 h-10 text-center">{props.Name}</p>

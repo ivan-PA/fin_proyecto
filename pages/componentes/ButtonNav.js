@@ -10,10 +10,8 @@ export default function ButtonNav(props) {
       className="nav py-2 pr-4 pl-3 mt-2 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-1"
     >
       <Link href="/">
-        <div>
-          {props.children}
-          <span className="bg-yellow-100 m-2 text-black text-lg">↓↓</span>
-        </div>
+        {props.children}
+        <span className="bg-yellow-100 m-2 text-black text-lg">↓↓</span>
       </Link>
 
       {/*Se añaden tantos enlaces lista como parámetros vengan por props */}
