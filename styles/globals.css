@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,6 +17,37 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.tutu {
+  background: red;
+  padding: 20px;
+  text: 255, 0, 0;
+}
+
+.contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconder scrollbar for Chrome, Safari y Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconder scrollbar para IE, Edge y Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.nav ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav:hover > ul {
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
