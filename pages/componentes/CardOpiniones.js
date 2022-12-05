@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function CardOpiniones(props) {
   return (
@@ -10,8 +10,11 @@ export default function CardOpiniones(props) {
           width={80}
           height={80}
           alt="Imagen de Bombilla"
-          layout="responsive"
-        />
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto"
+          }} />
       </div>
 
       <div className=" block relative top-0 -right-7 w-8 h-8 rounded-full z-10 m-auto">
@@ -22,8 +25,11 @@ export default function CardOpiniones(props) {
           width={32}
           height={32}
           alt="Imagen de Logo"
-          layout="responsive"
-        />
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className="bg-gray-400 flex flex-col relative bottom-8 right-4 w-96 h-64 overflow-y-auto rounded-lg shadow-lg shadow-black">
         <p className="p-1 mt-8 mx-4  w-70 h-10 text-center">{props.Name}</p>

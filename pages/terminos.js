@@ -1,5 +1,5 @@
-import Headernav from "./componentes/headernav";
-import Footer from "./footer";
+import Headernav from "./componentes/Headernav";
+import Footer from "./Footer";
 
 export default function Terminos() {
   return (

@@ -1,6 +1,6 @@
-import Headernav from "./componentes/headernav";
-import Footer from "./footer";
-import Image from "next/legacy/image";
+import Headernav from "./componentes/Headernav";
+import Footer from "./Footer";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Estudios() {
@@ -36,7 +36,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Java "}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -56,7 +60,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Android"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -77,7 +85,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Unity"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -98,7 +110,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de JavaScript"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -119,7 +135,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de React"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -140,7 +160,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Next js"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -161,7 +185,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Tailwind "}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -182,7 +210,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de Tailwind "}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -203,7 +235,11 @@ export default function Estudios() {
                           width={4}
                           height={4}
                           alt={"Logo de GitHub"}
-                          layout="responsive"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </div>
                       <p className="">
@@ -231,7 +267,11 @@ export default function Estudios() {
               width={300}
               height={300}
               alt="Imagen de Bombilla"
-              layout="responsive"
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
             />
           </div>
         </div>

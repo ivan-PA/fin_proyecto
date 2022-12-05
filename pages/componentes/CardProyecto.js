@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function CardProyecto(props) {
   return (
@@ -16,8 +16,11 @@ export default function CardProyecto(props) {
             width={384}
             height={384}
             alt={"Imagen de " + props.ruta}
-            layout="responsive"
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
       </Link>
     </div>

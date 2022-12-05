@@ -1,6 +1,6 @@
-import Headernav from "./componentes/headernav";
-import Footer from "./footer";
-import Image from "next/legacy/image";
+import Headernav from "./componentes/Headernav";
+import Footer from "./Footer";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function GitHub() {
@@ -37,7 +37,11 @@ export default function GitHub() {
             width={300}
             height={300}
             alt="Imagen de Bombilla"
-            layout="responsive"
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
           />
         </div>
       </div>
