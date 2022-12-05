@@ -1,6 +1,6 @@
 import Headernav from "../componentes/headernav";
 import Footer from "../footer";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Empresa2() {
   return (

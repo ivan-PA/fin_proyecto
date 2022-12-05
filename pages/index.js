@@ -1,5 +1,5 @@
 import Headernav from "./componentes/Headernav.js";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Footer from "./Footer.js";
 import CardOpiniones from "./componentes/CardOpiniones.js";
 import CardEmpresas from "./componentes/CardEmpresas.js";

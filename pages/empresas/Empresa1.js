@@ -1,6 +1,6 @@
 import Headernav from "../componentes/headernav";
 import Footer from "../footer";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Empresa1() {
   return (
@@ -29,8 +29,8 @@ export default function Empresa1() {
             className="w-4 h-4 lg:w-20 lg:h-20 p-12"
             src={"/images/empresas/GesInformatica.png"}
             priority
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             alt="Imagen de Bombilla"
             layout="responsive"
           />
