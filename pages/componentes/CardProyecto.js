@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function CardProyecto(props) {
   return (
@@ -19,6 +19,8 @@ export default function CardProyecto(props) {
             sizes="100vw"
             style={{
               width: "100%",
+              height: "auto",
+              maxWidth: "100%",
               height: "auto"
             }} />
         </div>

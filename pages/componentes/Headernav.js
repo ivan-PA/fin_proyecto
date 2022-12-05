@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState, useId, useEffect } from "react";
 import Link from "next/link";
 import ConfigBotonesMenu from "./ConfigBotonesMenu";
@@ -46,7 +46,10 @@ export default function Headernav() {
               height={40}
               alt="logo JP"
               href="/"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             {/* </div> */}
           </Link>
 
