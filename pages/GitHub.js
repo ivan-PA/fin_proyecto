@@ -36,7 +36,7 @@ export default function GitHub() {
             priority={true}
             width={300}
             height={300}
-            alt="Imagen de Bombilla"
+            alt="Imagen de Git-hub"
             sizes="100vw"
             style={{
               width: "100%",

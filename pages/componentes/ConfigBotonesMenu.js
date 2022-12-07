@@ -7,7 +7,9 @@ export default function ConfigBotonesMenu() {
   const id = useId();
   return (
     <div>
+      {/* Lista para mostrar los botones del menú. */}
       <ul className="headerNav group bg-white opacity-95 flex flex-col p-4 mt-4  xl:flex-row xl:space-x-8 xl:mt-0 xl:text-md xl:font-medium xl:border-0 z-30">
+        {/* Botón extensible con enlace a las empresas. */}
         <li>
           <ButtonNav
             id={id + 1}
@@ -17,6 +19,7 @@ export default function ConfigBotonesMenu() {
           </ButtonNav>
         </li>
 
+        {/* Enlace a la página sobre mi. */}
         <li>
           <Link
             href="/Sobremi"
@@ -26,6 +29,7 @@ export default function ConfigBotonesMenu() {
           </Link>
         </li>
 
+        {/* Enlace a la página con los estudios. */}
         <li>
           <Link
             href="/Estudios"
@@ -35,6 +39,7 @@ export default function ConfigBotonesMenu() {
           </Link>
         </li>
 
+        {/* Enlace a GitHub. */}
         <li>
           <Link
             href="/GitHub"
@@ -44,6 +49,7 @@ export default function ConfigBotonesMenu() {
           </Link>
         </li>
 
+        {/* Enlace a la página de contacto */}
         <li>
           <Link
             href="/Contacto"

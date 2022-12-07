@@ -37,7 +37,7 @@ export default function Contacto() {
             priority={true}
             width={300}
             height={300}
-            alt="Imagen de mensaje"
+            alt="Imagen de contacto"
             sizes="100vw"
             style={{
               width: "100%",
